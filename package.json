@@ -1,0 +1,11 @@
+{
+  "name": "lumi",
+  "version": "0.1.0",
+  "description": "Delicious backend framework for tasty developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

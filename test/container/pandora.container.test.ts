@@ -1,7 +1,7 @@
 import {expect} from "chai";
 import {PandoraContainer} from "../../src/container/pandora.container";
 import {BindingNotFoundException} from "../../src/container/support/binding-not-found.exception";
-import {inject} from "../../src/container/inject";
+import {Inject} from "../../src/container/inject";
 
 export function start(): PandoraContainer {
     return new PandoraContainer;
@@ -40,7 +40,7 @@ export class FooDouble {
 
 
 export class FooInjected {
-    constructor(@inject(Foo) public foo: Foo, @inject(Bar) public bar: Bar) {
+    constructor(@Inject(Foo) public foo: Foo, @Inject(Bar) public bar: Bar) {
     }
 }
 

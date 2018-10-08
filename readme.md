@@ -1,3 +1,3 @@
 # Say Hi to Lumi!
 
-Lumi is a backend web framework on Node JS and Typescript, built for well-structured and complex codebases.
+Lumi is a DI container for Typescript inspired by Laravel.

@@ -28,7 +28,7 @@ export class PandoraContainer implements Container {
         return this;
     }
 
-    public get<T>(givenKey: string|Function): T {
+    public get<T>(givenKey: string|Function|{ new (): T; }): T {
         let key: string = this.normalizeClassBindingName(givenKey);
         let result: any;
         if (key in this.bindings) {
